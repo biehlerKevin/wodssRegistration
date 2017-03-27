@@ -8,3 +8,5 @@ body{
   background-color: rgb(192, 192, 192);
   height: 100%;
 }
+
+@import '~@angular/material/core/theming/prebuilt/deeppurple-amber.css';

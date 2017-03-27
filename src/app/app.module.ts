@@ -3,7 +3,10 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { LoginComponent } from './shared/login/login.component';
+import { DialogLoginComponent } from './dialogs/dialogLogin.component';
 import { SeminarComponent } from './seminars/seminar.component';
+
+import { MaterialModule } from '@angular/material';
 
 import { AppComponent } from './app.component';
 
@@ -11,12 +14,14 @@ import { AppComponent } from './app.component';
   declarations: [
       AppComponent,
       LoginComponent,
-      SeminarComponent
+      SeminarComponent,
+      DialogLoginComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    MaterialModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
