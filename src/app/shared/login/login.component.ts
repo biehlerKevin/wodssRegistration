@@ -1,6 +1,7 @@
 ﻿import { Component, ViewContainerRef } from '@angular/core';
 import { MdDialog, MdDialogConfig, MdDialogRef } from '@angular/material';
 import { DialogLoginComponent } from '../../dialogs/dialogLogin.component';
+import { TranslateService } from '../../translation/translate.service';
 
 @Component({
     selector: 'sd-login',
@@ -19,7 +20,8 @@ export class LoginComponent {
 
     constructor(/**private authService: AuthenticationService, **/
         public dialog: MdDialog,
-        public viewContainerRef: ViewContainerRef ) {
+        public viewContainerRef: ViewContainerRef,
+        private _translate: TranslateService) {
     }
 
 

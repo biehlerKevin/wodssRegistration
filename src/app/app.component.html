@@ -7,6 +7,22 @@
 <div class="container-fluid">
     <seminars></seminars>
 </div>
-<footer>
-    &copy; 2017 Fachhochschule Nordwestschweiz
-</footer>
+<div>
+    <button md-raised-button *ngFor="let lang of supportedLanguages"
+            (click)="selectLang(lang.value)"
+             [disabled]="isCurrentLang(lang.value)">
+        {{ lang.display }}
+    </button>
+</div>
+<div>
+    <!--translate with pipe-->
+    <p>
+        Translate With Pipe: <strong>{{ 'Einloggen' | translate }}</strong>
+    </p>
+    <p>
+        Translate With Pipe: <strong>{{ 'Bla' | translate }}</strong>
+    </p>
+</div>
+    <footer>
+        &copy; 2017 Fachhochschule Nordwestschweiz
+    </footer>

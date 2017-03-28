@@ -10,3 +10,11 @@ footer{
   width: 100%;
 
 }
+
+.login-button {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 48px;
+  text-decoration: none;
+  vertical-align: middle;
+}
