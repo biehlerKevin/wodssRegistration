@@ -18,7 +18,7 @@ export class AppComponent implements OnInit{
         // standing data
         this.supportedLanguages = [
             { display: 'Deutsch', value: 'de' },
-            { display: 'Penis', value: 'pe'},
+            { display: 'English', value: 'en'},
         ];
 
         // set current langage
