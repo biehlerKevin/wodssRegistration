@@ -4,7 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { LoginComponent } from './shared/login/login.component';
 import { DialogLoginComponent } from './dialogs/dialogLogin.component';
-import { SeminarComponent } from './seminars/seminar.component';
+import { SeminarOverviewComponent } from './seminars/seminarOverview.component';
 
 import { MaterialModule } from '@angular/material';
 
@@ -14,7 +14,7 @@ import { AppComponent } from './app.component';
   declarations: [
       AppComponent,
       LoginComponent,
-      SeminarComponent,
+      SeminarOverviewComponent,
       DialogLoginComponent
   ],
   imports: [
@@ -23,7 +23,9 @@ import { AppComponent } from './app.component';
     HttpModule,
     MaterialModule.forRoot()
   ],
+  entryComponents: [DialogLoginComponent],
   providers: [],
   bootstrap: [AppComponent]
 })
+
 export class AppModule { }
