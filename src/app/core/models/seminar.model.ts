@@ -1,9 +1,9 @@
 
-export class Lecture {
+export class Seminar {
 	date: Date;
 	room: string;
 	referer: string;
-	titel: string;
+	title: string;
 	abstractSummary: string;
 	slides: any;
 	infoLink: any;

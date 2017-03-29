@@ -1,1 +1,9 @@
-<h1>Seminaraufzaehlung</h1>
+<h1>{{ 'Seminaruebersicht' | translate}}</h1>
+<div>
+    <table>
+        <tr *ngFor="let seminar of seminars">
+            <td>{{seminar.room}}</td>
+            <td>{{seminar.title}}</td>
+        </tr>
+    </table>
+</div>
