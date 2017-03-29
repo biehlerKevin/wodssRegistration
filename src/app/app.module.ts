@@ -5,6 +5,7 @@ import { HttpModule } from '@angular/http';
 import { LoginComponent } from './shared/login/login.component';
 import { DialogLoginComponent } from './dialogs/dialogLogin.component';
 import { SeminarOverviewComponent } from './seminars/seminarOverview.component';
+import { SeminarComponent } from './seminars/seminar.component';
 import { TRANSLATION_PROVIDERS } from './translation/translate';
 import { TranslateService } from './translation/translate.service';
 import { TranslatePipe } from './translation/translate.pipe';
@@ -20,7 +21,8 @@ import { AppComponent } from './app.component';
       LoginComponent,
       SeminarOverviewComponent,
       DialogLoginComponent,
-      TranslatePipe
+      TranslatePipe,
+      SeminarComponent
   ],
   imports: [
     BrowserModule,

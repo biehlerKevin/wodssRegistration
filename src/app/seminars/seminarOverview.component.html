@@ -1,9 +1,10 @@
-<h1>{{ 'Seminaruebersicht' | translate}}</h1>
+<h1>{{ 'Seminar&uuml;bersicht' | translate}}</h1>
 <div>
     <table>
         <tr *ngFor="let seminar of seminars">
-            <td>{{seminar.room}}</td>
-            <td>{{seminar.title}}</td>
+            <td>
+                <seminarComponent [seminar]=seminar></seminarComponent>
+            </td>
         </tr>
     </table>
 </div>

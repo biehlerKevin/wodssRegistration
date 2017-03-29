@@ -40,7 +40,9 @@ export class AppComponent implements OnInit{
         // refresh translation when language change
         this.translatedText = this._translate.instant('Einloggen');
         this.translatedText = this._translate.instant('Bla');
-        this.translatedText = this._translate.instant('Seminaruebersicht');
+        this.translatedText = this._translate.instant('Seminarübersicht');
+        this.translatedText = this._translate.instant('Fachhochschule Nordwestschweiz');
+        this.translatedText = this._translate.instant('Zimmer');
     }
 
 
