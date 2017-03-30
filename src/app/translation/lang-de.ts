@@ -9,4 +9,8 @@ export const LANG_DE_TRANS = {
     'Seminarübersicht': 'Seminarübersicht',
     'Fachhochschule Nordwestschweiz': 'Fachhochschule Nordwestschweiz',
     'Zimmer': 'Zimmer',
+	'showDetails' : 'Details anzeigen',
+	'hideDetails' : 'Details verbergen',
+	'delete' : 'Löschen',
+	'modify' : 'Bearbeiten'
 };

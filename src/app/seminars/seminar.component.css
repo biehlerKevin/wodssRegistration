@@ -8,3 +8,11 @@ table{
 tr{
     border: 1px solid black;
 }
+
+md-card{
+	margin: 10px;
+}
+
+.deleteBtn, .modifyBtn {
+	float: right;
+}

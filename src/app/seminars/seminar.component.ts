@@ -12,11 +12,26 @@ export class SeminarComponent {
 
     @Input()
     private seminar: Seminar;
+	private details: boolean;
 
     constructor(private _translate: TranslateService) {
 
     }
 
-
+	showDetails(){
+		this.details = true;
+	}
+	
+	hideDetails(){
+		this.details = false;
+	}
+	
+	delete(){
+	
+	}
+	
+	modify(){
+	
+	}
 
 }

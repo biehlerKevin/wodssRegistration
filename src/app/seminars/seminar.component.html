@@ -1,11 +1,13 @@
-<table>
-    <tr bgcolor="#e6f3ff">
-        <td>
-            <h3>{{seminar.title}}</h3>
-            {{seminar.date}},&nbsp;<b>{{'Zimmer' | translate}}</b>&nbsp;{{seminar.room}}
-        </td>      
-    </tr>
-    <tr>
-        <td>{{seminar.abstractSummary}}</td>
-    </tr>
-</table>
+<md-card>
+	<md-card-title>{{seminar.title}}</md-card-title>
+	<md-card-subtitle>{{seminar.date}},&nbsp;<b>{{'Zimmer' | translate}}</b>&nbsp;{{seminar.room}}</md-card-subtitle>
+	<md-card-content>
+		<div *ngIf="details">{{seminar.abstractSummary}}</div>
+	</md-card-content>
+	<md-card-actions>
+		<button md-raised-button *ngIf="details != true" (click)="showDetails()">{{'showDetails' | translate}}</button>
+		<button md-raised-button *ngIf="details" (click)="hideDetails()">{{'hideDetails' | translate}}</button>
+		<button md-raised-button class="deleteBtn" (click)="delete()" color="warn">{{'delete' | translate}}</button>
+		<button md-raised-button class="modifyBtn" (click)="modify()" color="primary">{{'modify' | translate}}</button>
+	</md-card-actions>
+</md-card>
