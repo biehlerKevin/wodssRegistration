@@ -9,8 +9,8 @@ export const LANG_EN_TRANS = {
     'Seminarübersicht': 'Overview seminars',
     'Fachhochschule Nordwestschweiz': 'University of Applied Sciences Northwestern Switzerland',
     'Zimmer': 'Room',
-	'showDetails' : 'show details',
-	'hideDetails' : 'hide details',
-	'delete' : 'delete',
-	'modify' : 'modify'
+	'Details anzeigen' : 'show details',
+	'Details verbergen' : 'hide details',
+	'Löschen' : 'delete',
+	'Bearbeiten' : 'modify'
 }; 
