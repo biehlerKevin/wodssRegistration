@@ -6,9 +6,9 @@ import { LoginComponent } from './shared/login/login.component';
 import { DialogLoginComponent } from './dialogs/dialogLogin.component';
 import { SeminarOverviewComponent } from './seminars/seminarOverview.component';
 import { SeminarComponent } from './seminars/seminar.component';
-import { TRANSLATION_PROVIDERS } from './translation/translate';
-import { TranslateService } from './translation/translate.service';
-import { TranslatePipe } from './translation/translate.pipe';
+import { TRANSLATION_PROVIDERS } from './shared/translation/translate';
+import { TranslateService } from './shared/translation/translate.service';
+import { TranslatePipe } from './shared/translation/translate.pipe';
 import 'hammerjs';
 
 import { MaterialModule } from '@angular/material';

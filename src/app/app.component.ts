@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { NgModule } from '@angular/core';
-import { TranslateService } from './translation/translate.service';
+import { TranslateService } from './shared/translation/translate.service';
 
 @Component({
   selector: 'app-root',
@@ -37,14 +37,16 @@ export class AppComponent implements OnInit{
     }
 
     refreshText() {
-        // refresh translation when language change
-        this.translatedText = this._translate.instant('Einloggen');
-        this.translatedText = this._translate.instant('Bla');
-        this.translatedText = this._translate.instant('Seminarübersicht');
-        this.translatedText = this._translate.instant('Fachhochschule Nordwestschweiz');
-        this.translatedText = this._translate.instant('Zimmer');
+        //Not needed ?????? works whitout it ???????
+
+        // refresh translation when language change 
+        this.translatedText = this._translate.instant('LOGIN');
+        this.translatedText = this._translate.instant('OVERVIEW SEMINARS');
+        this.translatedText = this._translate.instant('FHNW');
+        this.translatedText = this._translate.instant('ROOM');
     }
 
-
+ 
 
 }
+ 

@@ -1,13 +1,33 @@
 <md-card>
-	<md-card-title>{{seminar.title}}</md-card-title>
-	<md-card-subtitle>{{seminar.date}},&nbsp;<b>{{'Zimmer' | translate}}</b>&nbsp;{{seminar.room}}</md-card-subtitle>
+    <md-card-title>
+        {{seminar.title}}
+        <!--Later add ngif-->
+        <!--Source http://www.iconsdb.com/green-icons/checkmark-icon.html -->
+        <img style="float: right; margin:0px 0px 0px 10px" src="assets/checkmark-32.png" />
+        <!-- Source http://www.iconarchive.com/show/flat-gradient-social-icons-by-limav/email-icon.html -->
+        <img style="float: right" src="assets/email-icon.png" />
+    </md-card-title>
+    <md-card-subtitle><b>{{'SPEAKER' | translate}}:</b>&nbsp;{{seminar.speaker}}</md-card-subtitle>
+	<md-card-subtitle style="margin-bottom: 30px">
+        {{seminar.date}},&nbsp;
+        {{'DURATION' | translate}}:&nbsp;{{seminar.duration}}min,&nbsp;
+        <b>{{'ROOM' | translate}}</b>&nbsp;{{seminar.room}}
+        <!-- Source https://www.iconfinder.com/icons/1031520/arrow_download_guardar_save_icon#size=20 -->
+        <button md-raised-button class="downloadBtn" (click)="download()">
+            {{'SLIDES' | translate}}&nbsp;&nbsp;&nbsp;
+            <img src="assets/Download.png" />
+        </button>
+    </md-card-subtitle>
 	<md-card-content>
-		<div *ngIf="details">{{seminar.abstractSummary}}</div>
+        <div *ngIf="details">
+            {{seminar.abstractSummary}}
+        </div>
+
 	</md-card-content>
 	<md-card-actions>
-		<button md-raised-button *ngIf="details != true" (click)="showDetails()">{{'Details anzeigen' | translate}}</button>
-		<button md-raised-button *ngIf="details" (click)="hideDetails()">{{'Details verbergen' | translate}}</button>
-		<button md-raised-button class="deleteBtn" (click)="delete()" color="warn">{{'Löschen' | translate}}</button>
-		<button md-raised-button class="modifyBtn" (click)="modify()" color="primary">{{'Bearbeiten' | translate}}</button>
+		<button md-raised-button *ngIf="details != true" (click)="showDetails()">{{'SHOW DETAILS' | translate}}</button>
+		<button md-raised-button *ngIf="details" (click)="hideDetails()">{{'HIDE DETAILS' | translate}}</button>
+        <button md-raised-button class="enrolBtn" (click)="enrol()" color="accent">{{'ENROL' | translate}}</button>
+		<button md-raised-button class="editBtn" (click)="edit()" color="primary">{{'EDIT' | translate}}</button>
 	</md-card-actions>
-</md-card>
+</md-card>  

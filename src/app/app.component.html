@@ -1,28 +1,24 @@
+<!--Header-->
 <div class="banner">
     <img src="assets/FHNW_10mm.jpg"/>
 </div>
-<div style="position: absolute; right: 5px; top: 50px">
-    <sd-login></sd-login>
-</div>
-<div class="container-fluid">
-    <seminars></seminars>
-</div>
-<div>
+<!--Language Buttons-->
+<div style="position: absolute; right: 5px; top: 20px">
     <button md-raised-button *ngFor="let lang of supportedLanguages"
             (click)="selectLang(lang.value)"
-             [disabled]="isCurrentLang(lang.value)">
+            [disabled]="isCurrentLang(lang.value)">
         {{ lang.display }}
     </button>
 </div>
-<div>
-    <!--translate with pipe-->
-    <p>
-        Translate With Pipe: <strong>{{ 'Einloggen' | translate }}</strong>
-    </p>
-    <p>
-        Translate With Pipe: <strong>{{ 'Bla' | translate }}</strong>
-    </p>
+<!--Login Button-->
+<div style="position: absolute; right: 5px; top: 80px">
+    <sd-login></sd-login>
 </div>
-    <footer>
-        &copy; 2017 {{'Fachhochschule Nordwestschweiz' | translate }}
-    </footer>
+<!--Main Container-->
+<div class="container-fluid" style="margin-bottom: 100px">
+    <seminars></seminars>
+</div>
+<!--Footer-->
+<footer>
+    &copy; 2017 {{'FHNW' | translate }}
+</footer>

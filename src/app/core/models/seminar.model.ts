@@ -1,13 +1,10 @@
 
 export class Seminar {
-	date: Date;
+    date: Date;
+    duration: number;
 	room: string;
-	referer: string;
+	speaker: string;
 	title: string;
 	abstractSummary: string;
 	slides: any;
-	infoLink: any;
-	
-
-	
 }

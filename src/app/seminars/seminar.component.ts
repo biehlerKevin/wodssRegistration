@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { Seminar } from '../core/models/seminar.model';
-import { TranslateService } from '../translation/translate.service';
+import { TranslateService } from '../shared/translation/translate.service';
 
 
 @Component({
