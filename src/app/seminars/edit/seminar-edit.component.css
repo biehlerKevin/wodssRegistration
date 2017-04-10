@@ -1,0 +1,8 @@
+:host {
+}
+
+.printBtn, .deleteBtn, .createBtn {
+    margin-left:10px;
+
+}
+

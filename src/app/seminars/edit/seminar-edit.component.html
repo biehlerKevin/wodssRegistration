@@ -1,0 +1,44 @@
+<div style="margin:0px 0px 0px 5px">
+    <h1>{{ 'EDIT SEMINAR' | translate}}</h1>
+</div>
+<div style="margin:0px 0px 0px 10px">
+    <p>
+        <md-input-container>
+            <textarea mdInput placeholder="{{'TITEL' | translate}}" style="min-width: 200px"></textarea>
+        </md-input-container>
+        <md-input-container>
+            <textarea mdInput placeholder="{{'SPEAKER' | translate}}" style="min-width: 200px"></textarea>
+        </md-input-container>
+    </p>
+    <p>
+        <md-input-container>
+            <textarea mdInput placeholder="{{'ROOM' | translate}}" style="min-width: 200px"></textarea>
+        </md-input-container>
+        <md-input-container>
+            <textarea mdInput placeholder="{{'DURATION' | translate}}" style="min-width: 200px"></textarea>
+        </md-input-container>
+    </p>
+    <p>
+        <md-input-container>
+            <textarea mdInput placeholder="{{ 'ABSTRACT' | translate}}" style="min-width: 400px"></textarea>
+        </md-input-container>
+    </p>
+        <h3>Datepicker</h3>
+        <h3>Slide Upload</h3>
+
+    <div>
+        <!-- Source https://www.iconfinder.com/icons/314822/printer_text_icon#size=20 -->
+        <button md-raised-button class="printBtn" (click)="print()">
+            {{'PRINT' | translate}}&nbsp;&nbsp;&nbsp;
+            <img src="assets/Printer.png" />
+        </button>
+
+        <button md-raised-button color="accent" class="createBtn" (click)="create()">
+            {{'CREATE' | translate}}
+        </button>
+
+        <button md-raised-button color="warn" class="deleteBtn" (click)="delete()">
+            {{'DELETE' | translate}}
+        </button>
+    </div>
+</div>

@@ -1,0 +1,26 @@
+<div style="margin:0px 0px 0px 5px">
+    <h1>{{ 'USER MANAGEMENT' | translate}}</h1>
+</div>
+<div style="margin:0px 0px 0px 10px">
+    <div>
+        <md-input-container >
+            <textarea mdInput placeholder="{{'EMAIL' | translate}}" style="min-width:300px"></textarea>
+        </md-input-container>
+    </div>
+
+    <div>
+        <md-radio-group class="example-radio-group">
+            <md-radio-button class="example-radio-button" value="1">
+                {{'SPEAKER' | translate}}
+            </md-radio-button>
+            <md-radio-button class="example-radio-button" value="2">
+                {{'COORDINATOR' | translate}}
+            </md-radio-button>
+            <md-radio-button class="example-radio-button" value="3">
+                {{'SGL' | translate}}
+            </md-radio-button>
+        </md-radio-group>
+    </div>
+
+    <button md-raised-button class="createBtn" (click)="create()" color="accent">{{'CREATE' | translate}}</button>
+</div>

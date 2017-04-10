@@ -1,0 +1,25 @@
+<div style="margin:0px 0px 0px 5px">
+    <h1>{{ 'EMAIL DISPATCH' | translate}}</h1>
+</div>
+<div style="margin:0px 0px 0px 10px">
+    <div>
+        <h2>Seminartitel</h2>
+        <md-input-container>
+            <textarea mdInput placeholder="{{ 'EMAIL TEMPLATE' | translate}} von Server geladen" style="min-width: 400px"></textarea>
+        </md-input-container>
+
+    </div>
+    <div>
+        <md-input-container>
+            <textarea mdInput placeholder="To: " style="min-width: 400px"></textarea>
+        </md-input-container>
+        <md-input-container>
+            <textarea mdInput placeholder="CC: " style="min-width: 400px"></textarea>
+        </md-input-container>
+    </div>
+
+</div>
+
+<button md-raised-button color="accent" class="sendBtn" (click)="send()" style="float:right; margin-right: 200px">
+    {{'SEND' | translate}}
+</button>

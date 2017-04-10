@@ -1,18 +1,17 @@
-﻿<h4>{{'LOGIN' | translate}}</h4>
+﻿<h2>{{'LOGIN' | translate}}</h2>
 <div>
-    <label >Email</label>
-    <div>
-        <input type="text" class="form-control" id="email" name="email" [(ngModel)]="email">
-    </div>
+    <md-input-container>
+        <textarea mdInput placeholder="{{'EMAIL' | translate}}" style="min-width:300px"></textarea>
+    </md-input-container>
 </div>
 <div>
-    <label>Passwort</label>
-    <div>
-        <input type="text" id="password" name="password" [(ngModel)]="password">
-    </div>
+    <md-input-container>
+        <textarea mdInput placeholder="{{'PASSWORD' | translate}}" style="min-width:300px"></textarea>
+    </md-input-container>
 </div>
 <div>
-    <button md-raised-button >Einloggen</button>
-    <button md-raised-button (click)="dialogRef.close()">Cancel</button>
+    <button md-raised-button color="accent" style="float:right; margin-left: 5px; margin-right: 5px">{{'LOGIN' | translate}}</button>
+    <button md-raised-button color="warn"(click)="dialogRef.close()" style="float:right">{{'CANCEL' | translate}}</button>
 </div>
-<button md-raised-button>Shibboleth</button>
+<hr style="margin-top: 50px">
+<button md-raised-button color="primary" style="margin-top:20px; float: right">{{ 'SHIBBOLETH' | translate}}</button> 

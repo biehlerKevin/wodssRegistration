@@ -3,7 +3,7 @@
     <img src="assets/FHNW_10mm.jpg"/>
 </div>
 <!--Language Buttons-->
-<div style="position: absolute; right: 5px; top: 20px">
+<div style="position: absolute; right: 5px; top: 20px"> 
     <button md-raised-button *ngFor="let lang of supportedLanguages"
             (click)="selectLang(lang.value)"
             [disabled]="isCurrentLang(lang.value)">
@@ -15,9 +15,30 @@
     <sd-login></sd-login>
 </div>
 <!--Main Container-->
-<div class="container-fluid" style="margin-bottom: 100px">
-    <seminars></seminars>
-</div>
+<md-tab-group>
+    <md-tab label="{{'SEMINARS' | translate}}">
+        <div class="container-fluid" style="margin-bottom: 100px">
+            <seminars></seminars>
+        </div>
+    </md-tab>
+    <md-tab label="{{'USER MANAGEMENT' | translate}}">
+        <div class="container-fluid" style="margin-bottom: 100px">
+            <usermanagement></usermanagement>
+        </div>
+    </md-tab>
+    <md-tab label="Create/Edit">
+        <div class="container-fluid" style="margin-bottom: 100px">
+            <seminar-edit></seminar-edit>
+        </div>
+    </md-tab>
+    <md-tab label="Emailversand">
+        <div class="container-fluid" style="margin-bottom: 100px">
+            <email></email>
+        </div>
+    </md-tab>
+</md-tab-group>
+
+
 <!--Footer-->
 <footer>
     &copy; 2017 {{'FHNW' | translate }}
